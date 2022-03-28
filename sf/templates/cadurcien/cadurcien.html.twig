@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="pc">
+        {% if laliste is empty %}
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <center><h1 class="title text-light" style="font-size:50px; border">Aucune Utilisateurs à Cahors</h1></center>
+        {% else %}
+    <br/><br/><br/><br/><br/>
+    <center><h1 class="title text-light" style="font-size:50px; border"><b>Liste des utilisateurs vivant à Cahors </b></h1></center>
+    <br/><br/><br/>
+    <div class="p-5 border" style="background-color:#374e6e ">
+    <table class="table" style="color:white;">
+  <thead style="color:white;">
+    <tr>
+      <th scope="col">Nom</th>
+      <th scope="col">Prénom</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+      {% for unUser in laliste %}
+    <tr> 
+      <td>{{ unUser.nom }}</td>
+      <td>{{ unUser.prenom }}</td>
+
+    </tr>
+     {% endfor %}:
+     {% endif %}
+  </tbody>
+</table>
+    </div>
+    </div>
+    <div class="mobile">
+        {% if laliste is empty %}
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <center><h1 class="title text-light" style="font-size:50px; border">Aucune Utilisateur à Cahors</h1></center>
+        {% else %}
+    <br/><br/><br/><br/><br/>
+    <center><h1 class="title text-light" style="font-size:50px; border"><b>Liste des utilisateurs vivant à Cahors</b></h1></center>
+    <br/><br/><br/><br/><br/>
+    <div class="p-5 border" style="background-color:#374e6e ">
+    <table class="table" style="color:white;">
+  <thead style="color:white;">
+    <tr>
+      <th scope="col">Nom</th>
+      <th scope="col">Prénom</th>
+
+    </tr>
+  </thead>
+  <tbody>
+      {% for unUser in laliste %}
+    <tr> 
+      <td>{{ unUser.nom }}</td>
+      <td>{{ unUser.prenom }}</td>
+      
+    </tr>
+     {% endfor %}:
+     {% endif %}
+  </tbody>
+</table>
+    </div>
+    </div>
+    
+{% endblock %}{# empty Twig template #}

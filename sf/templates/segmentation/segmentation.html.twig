@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="pc">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+ <div class="block">
+     <center><h1 class="title text-light" style="font-size:50px; margin-top: -100px;"><b>La segmentation du réseaux</b></h1></center>
+            <div class="container my-5 d-grind gap-5">
+          <div class="p-5 border" style="background-color:#2f496c">
+
+              <p class="text-light paragraphe" style="font-size:30px; text-align: justify">
+                  <u style="color:#6EA2CA;"><b style="color:#6EA2CA;">La segmentation du réseaux</b></u><br/><br/>
+                  L'organisation des VLAN et de l'adressage IP est la suivante : </p><br/><br/>
+              <center><img src="img/aboutSeg.png"/></center><br/><br/>
+              <p class="text-light paragraphe" style="font-size:30px; text-align: justify">
+                  Les règles actuelles concernant les vlans sont les suivantes :</p>
+              <ul class="text-light paragraphe" style="font-size:30px; text-align: justify">
+                  <li>Chaque vlan (sauf le vlan visiteur) peut uniquement accéder (quel que soit le protocole) aux 
+                      vlans "Serveurs" et "Sortie";</li>
+                  <li>Le vlan "Visiteurs" peut uniquement interroger les serveur DNS et DHCP et sortir sur internet ;</li>
+                 </ul> 
+
+
+
+
+
+                  
+
+              
+          </div>
+      </div>
+      </div>
+            </div>
+        </div> 
+    </div>
+    </div>
+    <div class="mobile">
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+ <div class="block">
+     <center><h1 class="title text-light" style="font-size:40px; margin-top: -150px;"><b>L'equipement</b></h1></center>
+            <div class="my-5 d-grind gap-2">
+          <div class="border p-5" style="background-color:#2f496c">
+
+              <p class="text-light paragraphe" style="font-size:20px;">
+                  <u style="color:#6EA2CA;"><b style="color:#6EA2CA;">La segmentation du réseaux</b></u><br/><br/>
+                  L'organisation des VLAN et de l'adressage IP est la suivante : </p><br/><br/>
+              <center><img src="img/aboutSeg.png" style="max-width: 100%;height: auto;"/></center><br/><br/>
+              <p class="text-light paragraphe" style="font-size:20px;">
+                  Les règles actuelles concernant les vlans sont les suivantes :</p>
+              <ul class="text-light paragraphe" style="font-size:20px;">
+                  <li>Chaque vlan (sauf le vlan visiteur) peut uniquement accéder (quel que soit le protocole) aux 
+                      vlans "Serveurs" et "Sortie";</li>
+                  <li>Le vlan "Visiteurs" peut uniquement interroger les serveur DNS et DHCP et sortir sur internet ;</li>
+                 </ul> 
+          </div>
+      </div>
+      </div>
+            </div>
+        </div> 
+    </div>
+    </div>
+    
+{% endblock %}

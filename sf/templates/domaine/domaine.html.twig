@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="pc">
+        {% if laliste is empty %}
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <center><h1 class="title text-light" style="font-size:50px; border">Aucune Catégorie avec leur Domaines</h1></center>
+        {% else %}
+    <br/><br/><br/><br/><br/>
+    <center><h1 class="title text-light" style="font-size:50px; border"><b>Liste des Catégorie avec leur Domaines<br/></b></h1></center>
+    <br/><br/><br/>
+    <div class="p-5 border" style="background-color:#374e6e ">
+    <table class="table" style="color:white;">
+  <thead style="color:white;">
+    <tr>
+      <th scope="col">Catégorie</th>
+      <th scope="col">Domaine</th>
+      <th scope="col">2ème Domaine (s'il y en a)</th>
+
+    </tr>
+  </thead>
+  <tbody>
+      {% for unUser in laliste %}
+    <tr> 
+      <td>{{ unUser.libelle }}</td>
+        {% for domaine in unUser.leDomaine %}
+            <td>{{ domaine.nomDomaine }}</td>
+        {% endfor %}
+    </tr>
+     {% endfor %}
+     {% endif %}
+  </tbody>
+</table>
+    </div>
+    </div>
+    <div class="mobile">
+        {% if laliste is empty %}
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <center><h1 class="title text-light" style="font-size:50px; border">Aucune Catégorie avec leur Domaines</h1></center>
+        {% else %}
+    <br/><br/><br/><br/><br/>
+    <center><h1 class="title text-light" style="font-size:50px; border"><b>Liste des Catégorie avec leur Domaines</b></h1></center>
+    <br/><br/><br/><br/><br/>
+    <div class="p-5 border" style="background-color:#374e6e ">
+    <table class="table" style="color:white;">
+  <thead style="color:white;">
+    <tr>
+      <th scope="col">Catégorie</th>
+      <th scope="col">Domaine</th>
+      <th scope="col">2ème Domaine (s'il y en a)</th>
+      
+
+    </tr>
+  </thead>
+  <tbody>
+      {% for unUser in laliste %}
+    <tr> 
+      <td>{{ unUser.libelle }}</td>
+        {% for domaine in unUser.leDomaine %}
+            <td>{{ domaine.nomDomaine }}</td>
+        {% endfor %}
+    </tr>
+     {% endfor %}
+     {% endif %}
+  </tbody>
+</table>
+    </div>
+    </div>
+    
+{% endblock %}{# empty Twig template #}

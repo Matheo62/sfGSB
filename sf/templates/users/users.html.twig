@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="pc">
+        {% if lesUsers is empty %}
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <center><h1 class="title text-light" style="font-size:50px; border">Aucune Inscription</h1></center>
+        {% else %}
+    <br/><br/><br/><br/><br/>
+    <center><h1 class="title text-light" style="font-size:50px; border"><b>Liste des utilisateurs<br/></b></h1><p class="title" style="color:white; font-size: 18px;">{{ lesUsers |length }} utilisateurs inscris sur le site</p></center>
+    <br/><br/><br/>
+    <div class="p-5 border" style="background-color:#374e6e ">
+    <table class="table" style="color:white;">
+  <thead style="color:white;">
+    <tr>
+      <th scope="col">Nom</th>
+      <th scope="col">Prénom</th>
+      <th scope="col">Adresse</th>
+      <th scope="col">Cp</th>
+      <th scope="col">Ville</th>
+      <th scope="col">Date Embauche</th>
+      <th scope="col">Catégorie</th>
+
+    </tr>
+  </thead>
+  <tbody>
+      {% for unUser in lesUsers %}
+    <tr> 
+      <td>{{ unUser.nom }}</td>
+      <td>{{ unUser.prenom }}</td>
+      <td>{{ unUser.adresse }}</td>
+      <td>{{ unUser.cp }}</td>
+      <td>{{ unUser.ville }}</td>
+      <td>{{ unUser.dateEmbauche|date('d/m/Y')}}</td>.
+      <td>{{ unUser.laCategorie.libelle}}</td>
+    </tr>
+     {% endfor %}:
+     {% endif %}
+  </tbody>
+</table>
+    </div>
+    </div>
+    <div class="mobile">
+        {% if lesUsers is empty %}
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <center><h1 class="title text-light" style="font-size:50px; border">Aucune Inscription</h1></center>
+        {% else %}
+    <br/><br/><br/><br/><br/>
+    <center><h1 class="title text-light" style="font-size:50px; border"><b>Liste des utilisateurs</b></h1></center>
+    <br/><br/><br/><br/><br/>
+    <div class="p-5 border" style="background-color:#374e6e ">
+    <table class="table" style="color:white;">
+  <thead style="color:white;">
+    <tr>
+      <th scope="col">Nom</th>
+      <th scope="col">Prénom</th>
+      <th scope="col">Adresse</th>
+      <th scope="col">Cp</th>
+      <th scope="col">Ville</th>
+      <th scope="col">Date Embauche</th>
+      <th scope="col">Catégorie</th>
+
+    </tr>
+  </thead>
+  <tbody>
+      {% for unUser in lesUsers %}
+    <tr> 
+      <td>{{ unUser.nom }}</td>
+      <td>{{ unUser.prenom }}</td>
+      <td>{{ unUser.adresse }}</td>
+      <td>{{ unUser.cp }}</td>
+      <td>{{ unUser.ville }}</td>
+      <td>{{ unUser.dateEmbauche|date('d/m/Y')}}</td>
+      <td>{{ unUser.laCategorie.libelle}}</td>
+    </tr>
+     {% endfor %}:
+     {% endif %}
+  </tbody>
+</table>
+    </div>
+    </div>
+    
+{% endblock %}{# empty Twig template #}

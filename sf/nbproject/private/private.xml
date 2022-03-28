@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/wamp64/www/Symfony_GSB_3/sf/src/Entity/Etat.php</file>
+            <file>file:/C:/wamp64/www/Symfony_GSB_3/sf/src/Repository/FicheFraisRepository.php</file>
+            <file>file:/C:/wamp64/www/Symfony_GSB_3/sf/src/Entity/Utilisateur.php</file>
+            <file>file:/C:/wamp64/www/Symfony_GSB_3/sf/src/Controller/BaseController.php</file>
+            <file>file:/C:/wamp64/www/Symfony_GSB_3/sf/templates/utilisateurConcerne/utilisateurConcerne.html.twig</file>
+            <file>file:/C:/wamp64/www/Symfony_GSB_3/sf/src/Entity/UtilisateurSecondaire.php</file>
+            <file>file:/C:/wamp64/www/Symfony_GSB_3/sf/src/Entity/Fichefrais.php</file>
+            <file>file:/C:/wamp64/www/Symfony_GSB_3/sf/templates/base.html.twig</file>
+            <file>file:/C:/wamp64/www/Symfony_GSB_3/sf/src/Repository/UtilisateurSecondaireRepository.php</file>
+        </group>
+    </open-files>
+</project-private>

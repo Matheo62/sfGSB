@@ -1,0 +1,60 @@
+.text{
+    padding-top: 25%;
+    text-align: center;
+    font-size: 100px;
+}
+
+.text2{
+    font-size:40px;
+}
+
+body{
+    background-image: url('../img/laboratoire.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    
+}
+
+.block{
+margin-top: 200px;
+margin-left: -50px;
+margin-right:-50px;
+
+ 
+}
+
+.title{
+    text-shadow:2px 0 0 #374e6e, 2px 2px 0 #374e6e, 0 2px 0 #374e6e, -2px 2px 0 #374e6e,-2px 0 0 #374e6e,-2px -2px 0 #374e6e,0 -2px 0 #374e6e,2px -2px 0 #374e6e
+}
+
+a {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  color:white;
+  text-transform: uppercase;
+}
+
+.mobile{
+    display:none;
+}
+
+.pc{
+    display: block;
+}
+
+.dropdown-item:hover{
+    background-color: red;
+}
+    
+    
+@media (max-width: 760px){
+    .mobile{
+    display:block;
+}
+
+.pc{
+    display: none;
+}
+}
+
